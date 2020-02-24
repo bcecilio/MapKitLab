@@ -19,6 +19,16 @@
 		B79AB9672404119D00D81A82 /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79AB9662404119D00D81A82 /* SchoolModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B7D1AA10240415DE008DDD50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B79AB93E24040E3900D81A82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B79AB94524040E3900D81A82;
+			remoteInfo = MapKitLab;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		B79AB94624040E3900D81A82 /* MapKitLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapKitLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79AB94924040E3900D81A82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +41,7 @@
 		B79AB95D24040F1B00D81A82 /* CoreLocationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationSession.swift; sourceTree = "<group>"; };
 		B79AB9612404108B00D81A82 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		B79AB9662404119D00D81A82 /* SchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
+		B7D1AA0B240415DE008DDD50 /* MapKitLabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapKitLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +50,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B79AB9652404118400D81A82 /* ImageKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D1AA08240415DE008DDD50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				B79AB94624040E3900D81A82 /* MapKitLab.app */,
+				B7D1AA0B240415DE008DDD50 /* MapKitLabTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,13 +88,21 @@
 				B79AB95D24040F1B00D81A82 /* CoreLocationSession.swift */,
 				B79AB9612404108B00D81A82 /* APIClient.swift */,
 				B79AB9662404119D00D81A82 /* SchoolModel.swift */,
-				B79AB94D24040E3900D81A82 /* ViewController.swift */,
+				B7D1AA06240413F5008DDD50 /* Controller */,
 				B79AB94F24040E3900D81A82 /* Main.storyboard */,
 				B79AB95224040E3C00D81A82 /* Assets.xcassets */,
 				B79AB95424040E3C00D81A82 /* LaunchScreen.storyboard */,
 				B79AB95724040E3C00D81A82 /* Info.plist */,
 			);
 			path = MapKitLab;
+			sourceTree = "<group>";
+		};
+		B7D1AA06240413F5008DDD50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B79AB94D24040E3900D81A82 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +128,24 @@
 			productReference = B79AB94624040E3900D81A82 /* MapKitLab.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B7D1AA0A240415DE008DDD50 /* MapKitLabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7D1AA12240415DE008DDD50 /* Build configuration list for PBXNativeTarget "MapKitLabTests" */;
+			buildPhases = (
+				B7D1AA07240415DE008DDD50 /* Sources */,
+				B7D1AA08240415DE008DDD50 /* Frameworks */,
+				B7D1AA09240415DE008DDD50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7D1AA11240415DE008DDD50 /* PBXTargetDependency */,
+			);
+			name = MapKitLabTests;
+			productName = MapKitLabTests;
+			productReference = B7D1AA0B240415DE008DDD50 /* MapKitLabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -113,6 +158,10 @@
 				TargetAttributes = {
 					B79AB94524040E3900D81A82 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					B7D1AA0A240415DE008DDD50 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B79AB94524040E3900D81A82;
 					};
 				};
 			};
@@ -133,6 +182,7 @@
 			projectRoot = "";
 			targets = (
 				B79AB94524040E3900D81A82 /* MapKitLab */,
+				B7D1AA0A240415DE008DDD50 /* MapKitLabTests */,
 			);
 		};
 /* End PBXProject section */
@@ -145,6 +195,13 @@
 				B79AB95624040E3C00D81A82 /* LaunchScreen.storyboard in Resources */,
 				B79AB95324040E3C00D81A82 /* Assets.xcassets in Resources */,
 				B79AB95124040E3900D81A82 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7D1AA09240415DE008DDD50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +221,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B7D1AA07240415DE008DDD50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7D1AA11240415DE008DDD50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B79AB94524040E3900D81A82 /* MapKitLab */;
+			targetProxy = B7D1AA10240415DE008DDD50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B79AB94F24040E3900D81A82 /* Main.storyboard */ = {
@@ -336,6 +408,46 @@
 			};
 			name = Release;
 		};
+		B7D1AA13240415DE008DDD50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 879MP5M96B;
+				INFOPLIST_FILE = MapKitLabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brendoncecilio.MapKitLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapKitLab.app/MapKitLab";
+			};
+			name = Debug;
+		};
+		B7D1AA14240415DE008DDD50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 879MP5M96B;
+				INFOPLIST_FILE = MapKitLabTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brendoncecilio.MapKitLabTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapKitLab.app/MapKitLab";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +465,15 @@
 			buildConfigurations = (
 				B79AB95B24040E3C00D81A82 /* Debug */,
 				B79AB95C24040E3C00D81A82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7D1AA12240415DE008DDD50 /* Build configuration list for PBXNativeTarget "MapKitLabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7D1AA13240415DE008DDD50 /* Debug */,
+				B7D1AA14240415DE008DDD50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

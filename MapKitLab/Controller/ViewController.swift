@@ -12,12 +12,13 @@ import MapKit
 class ViewController: UIViewController {
     
     private let locationSession = CoreLocationSession()
+    
+    private var schools = [School]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-
 
 }
 
