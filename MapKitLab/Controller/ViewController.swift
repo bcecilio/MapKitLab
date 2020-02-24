@@ -20,5 +20,20 @@ class ViewController: UIViewController {
         
     }
 
+    private func loadMapView() {
+        
+    }
+    
+    private func convertCoordinateToPlacemakr() {
+        
+    }
+    
+    private func convertPlacemarkToCoordinate() {
+        
+    }
+}
+
+extension ViewController: MKMapViewDelegate {
+    
 }
 
